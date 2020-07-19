@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawsome/css/all.css">
+    <link rel="stylesheet" href="/src/css/chat.css">
+    <title>Talkloud</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/src/img/user.png" class="fluid u-online" alt="">
+            <h1 class="text-center">Talkloud Messenger <i class="fa fa-window-close" data-target="tootip" title="Close"></i></h1>
+        </div>
+        <section class="message-body">
+            <h2 class="text-center">Join a Room and Start having fun with Friends!</h2>
+            <div class="row">
+                <div class="col-md-5 col-sm-5">
+                    <div class="rooms">
+                        <h3>Available Rooms</h3>
+                        <p class="lead">#Songs</3p>
+                        <p class="lead">#Fashion</p>
+                        <p class="lead">#Programming</p>
+                        <p class="lead">#Education</p>
+                        <button class="btn btn-sm btn-info" data-toggle="collapse" data-target="#addRoom">Create New Room</button>
+                        <div class="collapse" id="addRoom">
+                            <div class="input-group">
+                                <input type="text" name="newRoom" class="form-control" id="new-room" required>
+                                <input type="button" class=" btn btn-primary append" id="createRoom" value="Create Room">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <div class="join-room">
+                        <img src="/src/img/lion.jpg" class="friends d-flex w-100" alt="">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" name="room" id="room" class="form-control" required>
+                                <input type="button" class="btn btn-sm btn-primary append" value="Join Room">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="chats-body hide">
+            <button class="btn btn-secondary">Change Room</button>
+            <h4 class="text-center">4 users online</h4>
+           <div class="chats">
+                <div class="message">
+                    <p class="lead">How far?</p>
+                    <p class="text-muted">pope</p>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="userMessage"required>
+                            <button type="button" class="btn btn-success" id="sendMessage"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Send Message</button>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <footer>
+            <p class=" text-center"><i class="fa fa-copyright" aria-hidden="true"></i> 2020 Talkloud Messenger, Allrights Reserved.</p>
+        </footer>
+    </div>
+    <script src="/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/fontawsome/js/all.min.js"></script>
+</body>
+</html>

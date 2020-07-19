@@ -1,0 +1,93 @@
+.header{
+    background: #4590f3;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    margin: 5px auto;
+    max-width: 650px;
+}
+.u-online{
+    width: 60px;
+    height: 60px;
+    margin-left: 25px;
+}
+.header h1{
+    color: #fff;
+    margin:0 auto;
+}
+ .fa-window-close{
+    color: red;
+    margin-left: 25px;
+}
+.fa-window-close:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 480px){
+    .header h1{
+        font-size: 20px;
+        font-weight: bold;
+        float: right;
+    }
+    .u-online{
+        margin-left: 0;
+        width: 28px;
+        height: 28px;
+    }
+    .fa-window-close{
+        margin-left: 20px;
+    }
+}
+/* header CSS ends here */
+.message-body{
+    max-width: 650px;
+    margin: 5px auto;
+}
+.rooms{
+    border: 3px solid #666666;
+    padding: 5px;
+    border-radius: 5px;
+}
+.rooms p{
+    background: #c5c5c5;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.rooms p:hover{
+    cursor: pointer;
+}
+.rooms .input-group{
+    margin-top: 5px;
+}
+.join-room{
+    padding: 5px;
+}
+.join-room .form-group{
+    margin-top: 8px;
+}
+/* Joining Rooms CSS styling ends here */
+.chats-body{
+    max-width: 650px;
+    margin: 5px auto;
+}
+.chats{
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 6px;
+}
+.message{
+    background: #6f788567;
+    padding: 3px;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+.message p{
+    margin: 0;
+}
+
+.hide{
+    display: none;
+}
+/* Styles for the messages and message box ends here */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawsome/css/all.css">
+    <link rel="stylesheet" href="/src/css/index.css">
+    <title>Talkloud</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Talkloud Messanger <i class="fa fa-chat-alt" aria-hidden="true"></i></h1>
+        <div class="login ">
+            <form method="POST" action="">
+                <div class="form-group">
+                    <input type="text" name="username" class="form-control" placeholder="Username" required id="userName">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="password" placeholder="Password" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <p class="lead">Don't have an Account? <a href="#" id="reg">Register Now</a></p>
+                    <p class="warning"></p>
+                </div>
+                <button class="btn btn-lg btn-primary" id="loginBtn">Login</button>
+            </form>
+        </div>
+        <div class="register hide">
+            <form method="POST" action="">
+                <div class="form-group">
+                    <input type="text" name="name" id="regName" placeholder="Full Name" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="username" class="form-control" placeholder="Username" required id="regUserName">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="regPassword" placeholder="Password" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="confirm" id="regConfirm" placeholder="Confirm Password" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <p class="lead">Have an Account? <a href="#" id="log">Login Here.</a></p>
+                    <p class="regWarning"></p>
+                </div>
+                <button id="create" class="btn btn-lg btn-primary">Create Account</button>
+            </form>
+        </div>
+        <footer>
+            <p class="lead text-center">Copy Right &copy; 2020. Talkloud Allrights Reserved.</p>
+        </footer>
+    </div>
+    <script src="/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/fontawsome/js/all.js"></script>
+    <script src="/src/js/index.js"></script>
+</body>
+</html>
