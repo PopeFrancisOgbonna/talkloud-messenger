@@ -31,16 +31,20 @@ newUser.addEventListener('click', (e) =>{
     const confirm = document.querySelector('#regConfirm');
 
     //Creating user account
-    if(name.value || userName.value || password.value || confirm.value){
+    if(name.value && userName.value && password.value && confirm.value){
        
         warning.innerHTML = 'Account Created Successfully!';
         warning.style.color = 'green';
 
         setTimeout(() => {
         warning.innerHTML ='';
+        name.value = '';
+        userName.value = '';
+        password.value ='';
+        confirm.value ='';
         toggleVisibility(login); 
         }, 4000);
-    }else if(password.value !== confirm){
+    }else if(password.value !== confirm.value){
         warning.innerHTML ="Password do not Match.";
         warning.style.color = 'red';
     }else{
