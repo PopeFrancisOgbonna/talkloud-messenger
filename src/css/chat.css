@@ -44,21 +44,28 @@
     max-width: 650px;
     margin: 5px auto;
 }
-.rooms{
+.roomsList{
     border: 3px solid #666666;
     padding: 5px;
     border-radius: 5px;
 }
-.rooms p{
+.roomsList p{
     background: #c5c5c5;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
 }
-.rooms p:hover{
+.roomsList p:hover{
     cursor: pointer;
 }
-.rooms .input-group{
+.rooms{
+    padding: 0;
+}
+.rooms li{
+    list-style: none;
+    margin-left: 0;
+}
+.roomsList .input-group{
     margin-top: 5px;
 }
 .join-room{

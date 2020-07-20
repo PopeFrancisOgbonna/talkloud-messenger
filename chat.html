@@ -12,18 +12,20 @@
     <div class="container">
         <div class="header">
             <img src="/src/img/user.png" class="fluid u-online" alt="">
-            <h1 class="text-center">Talkloud Messenger <i class="fa fa-window-close" data-target="tootip" title="Close"></i></h1>
+            <h1 class="text-center">Talkloud Messenger <span id="close"><i class="fa fa-window-close" data-target="tootip" title="Close"></i></span></h1>
         </div>
         <section class="message-body">
             <h2 class="text-center">Join a Room and Start having fun with Friends!</h2>
             <div class="row">
                 <div class="col-md-5 col-sm-5">
-                    <div class="rooms">
+                    <div class="roomsList">
                         <h3>Available Rooms</h3>
-                        <p class="lead">#Songs</3p>
-                        <p class="lead">#Fashion</p>
-                        <p class="lead">#Programming</p>
-                        <p class="lead">#Education</p>
+                        <ul class="rooms">
+                            <li><p class="lead">#Songs</p></li>
+                            <li><p class="lead">#Fashion</p></li>
+                            <li><p class="lead">#Programming</p></li>
+                            <li><p class="lead">#Education</p></li>
+                        </ul>
                         <button class="btn btn-sm btn-info" data-toggle="collapse" data-target="#addRoom">Create New Room</button>
                         <div class="collapse" id="addRoom">
                             <div class="input-group">
@@ -39,7 +41,7 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <input type="text" name="room" id="room" class="form-control" required>
-                                <input type="button" class="btn btn-sm btn-primary append" value="Join Room">
+                                <input type="button" id="join" class="btn btn-sm btn-primary append" value="Join Room">
                             </div>
                         </div>
                     </div>
@@ -47,7 +49,7 @@
             </div>
         </section>
         <div class="chats-body hide">
-            <button class="btn btn-secondary">Change Room</button>
+            <button id="back" class="btn btn-secondary">Change Room</button>
             <h4 class="text-center">4 users online</h4>
            <div class="chats">
                 <div class="message">
@@ -64,12 +66,13 @@
                 </div>
            </div>
         </div>
-        <footer>
+        <footer class="mt-4">
             <p class=" text-center"><i class="fa fa-copyright" aria-hidden="true"></i> 2020 Talkloud Messenger, Allrights Reserved.</p>
         </footer>
     </div>
     <script src="/bootstrap/js/jquery-3.4.1.min.js"></script>
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/fontawsome/js/all.min.js"></script>
+    <script src="/src/js/chat.js"></script>
 </body>
 </html>
